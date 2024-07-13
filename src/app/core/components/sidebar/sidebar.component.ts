@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { ISidebar } from '../../models';
 import { CoreConstants } from '../../constants';
 import { RouterModule } from '@angular/router';
@@ -12,5 +12,6 @@ import { CommonModule } from '@angular/common';
   standalone: true
 })
 export class SidebarComponent {
-  sidebar: ISidebar[] = CoreConstants.sidebar;
+  //sidebar: ISidebar[] = CoreConstants.sidebar;
+  sidebar = signal<ISidebar[]>(CoreConstants.sidebar)
 }
