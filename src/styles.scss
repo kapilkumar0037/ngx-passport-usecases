@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {   
+    font-size: 14px;
+    //font-family: "ubuntu", Helvetica, Arial, sans-serif;
+    color: #555;
+  }
+@import  "../node_modules/ngx-passport-input/assets/styles.css";
